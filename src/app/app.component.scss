@@ -1,0 +1,32 @@
+mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .desktop-menu {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-button {
+        display: block;
+    }
+}
+
+.active {
+    background-color: #e0e0e0;
+    color: #333;
+}

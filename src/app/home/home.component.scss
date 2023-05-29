@@ -1,0 +1,206 @@
+.hero-section {
+    background-image: url('../../assets/karry-super.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.hero-content {
+    text-align: start;
+    color: black;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 100px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px;
+    }
+
+    .hero-content {
+        padding: 0 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+.business-we-back {
+    padding: 50px 650px;
+}
+
+.business-we-back h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .business-we-back {
+        padding: 50px 100px;
+    }
+
+    .business-we-back h2 {
+        font-size: 20px;
+    }
+}
+
+.resturants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 250px;
+}
+
+.resturants-content {
+    margin-left: 20px;
+    text-align: end;
+}
+
+.resturants h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.resturants p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .resturants {
+        padding: 0 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resturants-content {
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+.resturants img {
+    max-width: 100%;
+    height: auto;
+}
+
+.customer-engament {
+    margin-top: 50px;
+    padding: 80px 50px;
+    text-align: center;
+    background-color: yellow;
+}
+
+.customer-engament h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 21%;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    text-align: start;
+}
+
+.card img {
+    max-width: 40px;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.responsive-button {
+    background-color: blue !important;
+    color: white !important;
+    margin-top: 45px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .responsive-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+// -----------
+
+.community {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.community-content {
+    text-align: start;
+    padding: 0 76px 0 165px;
+}
+
+.community h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.community p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.community img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .community {
+        padding: 0 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .community-content {
+        margin: 20px 0;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .community img {
+        max-width: 100%;
+        height: auto;
+    }
+}

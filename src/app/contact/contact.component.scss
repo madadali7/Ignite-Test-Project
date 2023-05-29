@@ -1,0 +1,141 @@
+.hero-section {
+    background-image: url('../../assets/Join-our-team.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: block;
+    margin-bottom: 40%;
+}
+
+.hero-content {
+    text-align: start;
+    color: #fff;
+    width: 100%;
+    max-width: 500px;
+    padding: 180px 200px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px;
+        margin-bottom: 114%;
+    }
+
+    .hero-content {
+        padding: 100px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+}
+
+.contact-form {
+    border: 1px solid #e2e2e2;
+    padding: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 100px; /* Adjusted margin-bottom value */
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+input[type="file"]::file-selector-button {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    padding: 10px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="file"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.cv-profile-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.cv-profile-group .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.cv-profile-group input[type="file"] {
+    margin-right: 10px;
+}
+
+.cv-profile-group button {
+    margin-top: 9px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+.sendBtn {
+    text-align: center;
+}

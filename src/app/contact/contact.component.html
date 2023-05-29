@@ -1,0 +1,40 @@
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>Join our Team</h1>
+    </div>
+
+    <div class="contact-form">
+        <!-- Form -->
+        <form [formGroup]="form" (ngSubmit)="submitForm()">
+            <div class="form-group">
+                <input type="text" id="fullName" formControlName="fullName" required placeholder="Full Name (Required)">
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="email" formControlName="email" required placeholder="Email (Required)">
+            </div>
+
+            <div class="form-group">
+                <input type="tel" id="phoneNumber" formControlName="phoneNumber" required placeholder="Phone Number (Required)">
+            </div>
+
+            <div formArrayName="cvProfiles">
+                <div *ngFor="let cvProfile of cvProfiles.controls; let i = index" class="cv-profile-group">
+                    <div class="form-group">
+                        <input type="file" [formControlName]="i" required placeholder="Add your CV or Profile">
+                        <button type="button" (click)="removeCvProfile(i)">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="button" (click)="addCvProfile()">Add</button>
+            </div>
+
+            <div class="sendBtn">
+                <button type="submit" mat-flat-button color="primary" [disabled]="form.invalid">Send</button>
+            </div>
+        </form>
+    </div>
+
+</div>
