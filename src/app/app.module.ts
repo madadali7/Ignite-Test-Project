@@ -18,7 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { CareersComponent } from './careers/careers.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ToastrModule } from 'ngx-toastr';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -42,7 +42,7 @@ import { ToastrModule } from 'ngx-toastr';
     MatButtonModule,
     MatMenuModule,
     ReactiveFormsModule,
-    ToastrModule.forRoot()
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
