@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { ToastrService } from 'ngx-toastr';
+import {MatSnackBar, MatSnackBarRef, MatSnackBarModule} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 export class ContactComponent {
   form: FormGroup;
   constructor(private formBuilder: FormBuilder,
-    private toaster: ToastrService) {
+    private snackBar: MatSnackBar) {
     this.form = this.formBuilder.group({
       fullName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -40,7 +40,12 @@ export class ContactComponent {
   submitForm() {
     if (this.form.valid) {
       // Handle form submission logic here
-      this.toaster.success('Form has been Submited')
+      this.snackBar.open('Form submitted successfully', 'Close', {
+        duration: 3000, // Duration in milliseconds
+        horizontalPosition: 'center',
+        verticalPosition: 'top',
+        panelClass: ['success-snackbar'] // Custom CSS class for styling
+      });
       // Reset the form
       this.form.reset();
     }
